@@ -1,0 +1,49 @@
+<div>
+  <p>I am feeling blue</p>
+</div>
+<section>
+  <p>I just want to be left alone!</p>
+</section>
+
+
+Only 1st blue
+
+1)
+<div>
+  <p>I am feeling blue</p>
+</div>
+<section>
+  <p>I just want to be left alone!</p>
+</section>
+
+
+2)
+div p {
+  color: blue;
+}
+
+
+q2)
+<div>
+  <div>
+    <div class="makeMeBlue">
+      <p>I am feeling blue</p>
+    </div>
+  </div>
+  <section class="makeMeBlue">
+    <p>I just want to be left alone!</p>
+  </section>
+</div>
+
+
+
+
+1)div.makeMeBlue p {
+  color: blue;
+}
+
+
+
+2)div > div > p {
+  color: blue;
+}
