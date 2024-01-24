@@ -7,7 +7,7 @@ body {
 
 /** HEADER **/
 #header-nav {
-  background-color: #E7882F;
+  background-color: #e8a941;
   border-radius: 0;
   border: 0;
 }
@@ -59,6 +59,18 @@ body {
 #nav-list a span {
   font-size: 1.8em;
 }
+#phone {
+  margin-top: 5px;
+}
+#phone a { /* Phone number */
+  text-align: right;
+  padding-bottom: 0;
+}
+#phone div { /* Contact*/
+  color: #557c3e;
+  text-align: right;
+  padding-right: 15px;
+}
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #DCC7AA;
 }
@@ -66,6 +78,7 @@ body {
   clear: both;
   margin-top: -30px;
 }
+
 /* END HEADER */
 
 /* HOME PAGE */
@@ -122,18 +135,40 @@ body {
     padding-top: 10px;
     font-size: 5vw; /* 1vw = 1% of viewport width */
   }
-  #collapsable-nav a { /* Collapsed nav menu text */
+  .navbar-brand p { /* slogan*/
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* symbol */
+    height: 20px;
+  }
+  #collapsable-nav a { /* Collapsed nav  text */
     font-size: 1.2em;
   }
-  #collapsable-nav a span { /* Collapsed nav menu glyph */
+  #collapsable-nav a span { /* Collapsed nav glyph */
     font-size: 1em;
     margin-right: 5px;
   }
-/* END HEADER */
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  #xs-contact {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+
   /* Home Page */
   .container .jumbotron {
     margin-top: 30px;
     padding: 0;
   }
-
-}
