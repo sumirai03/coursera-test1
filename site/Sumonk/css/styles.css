@@ -36,6 +36,15 @@ body {
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
+} 
+.navbar-brand p { /* Slogan */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+.navbar-brand p span { /* symbol*/
+  vertical-align: middle;
 }
 #nav-list {
   margin-top: 10px;
@@ -57,6 +66,15 @@ body {
   clear: both;
   margin-top: -30px;
 }
+/* END HEADER */
+
+/* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 50px #0c0905;
+  border: 2px solid #0c0905;
+}
+
+/* END HOME PAGE */
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .container .jumbotron {
@@ -81,15 +99,6 @@ body {
     height: 558px;
   }
   /* End Home Page */
-}
-
-/* HOME PAGE */
-.container .jumbotron {
-  box-shadow: 0 0 50px #3F0C1F;
-  border: 2px solid #3F0C1F;
-}
-
-/* END HOME PAGE */
 }
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
