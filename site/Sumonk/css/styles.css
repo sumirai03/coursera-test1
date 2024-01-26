@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
   color: #fff;
-  background-color: #DCC7AA;
+  background-color: #FFFFFF;
   font-family: 'Oxygen', sans-serif;
 }
 
@@ -22,11 +22,10 @@ body {
 .navbar-brand {
   padding-top: 25px;
 }
-
 .navbar-brand h1 { /* Site name */
   font-family: 'Lora', serif;
   color: #687A8F;
-  font-size: 2.5em;
+  font-size: 1.5em;
   text-transform: uppercase;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
@@ -34,7 +33,7 @@ body {
   margin-bottom: 0;
   line-height: .75;
 }
-.navbar-brand a:hover, .navbar-brand a:focus {
+.navbar-brand a:hover, .navbar-brand a:focus { /* Underline remover*/
   text-decoration: none;
 } 
 .navbar-brand p { /* Slogan */
@@ -67,7 +66,7 @@ body {
   padding-bottom: 0;
 }
 #phone div { /* Contact*/
-  color: #557c3e;
+  color:#687A8F;
   text-align: right;
   padding-right: 15px;
 }
@@ -87,6 +86,39 @@ body {
   border: 2px solid #0c0905;
 }
 
+#project-tile, #certificate-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+#project-tile:hover, #certificate-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #080a28;
+}
+
+#project-tile{
+  background: url('../images/project-tile.jpg') no-repeat;
+  background-position: center;
+}
+#certificate-tile {
+  background: url('../images/certificate-tile.jpg') no-repeat;
+  background-position: center;
+}
+
+#project-tile span, #certificate-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
 /* END HOME PAGE */
 /********** Large devices only **********/
 @media (min-width: 1200px) {
@@ -111,15 +143,25 @@ body {
     background: url('../images/jumbotron_992.jpg') no-repeat;
     height: 558px;
   }
+  #menu-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
   /* End Home Page */
 }
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* Home Page */
  .container .jumbotron {
     background: url('../images/jumbotron_768.jpg') no-repeat;
     height: 432px;
   }
+
   /* End Home Page */
 
 }
@@ -155,11 +197,12 @@ body {
     display: block;
     margin: 0 20px;
     padding: 10px;
-    border: 2px solid #fff;
-    background-color: #f6b319;
+    border: 2px solid #000000;
+    background-color: #e8a941;
     color: #951c49;
   }
   #xs-contact {
+    color:#687A8F;
     margin-top: 5px;
     font-size: .7em;
     letter-spacing: .1em;
@@ -172,3 +215,26 @@ body {
     margin-top: 30px;
     padding: 0;
   }
+
+  #project-tile, #certficate-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
+}
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+  
+  /* Home page */
+  #project-tile, #certificate-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+}

@@ -37,17 +37,17 @@
 
         <div id="collapsable-nav" class="collapse navbar-collapse">
            <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li>
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Home</a>
+            </li>
             <li>
               <a href="mailto:sumitrai556@gmail.com">
                 <span class="glyphicon glyphicon-envelope"></span><br class="hidden-xs"> Email</a>
             </li>
             <li>
-              <a href="#">
-                <span class="glyphicon glyphicon-user"></span><br class="hidden-xs"> Projects</a>
-            </li>
-            <li>
               <a href="index.html">
-                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+                <span class="glyphicon glyphicon-user"></span><br class="hidden-xs"> About</a>
             </li>
             <li id="phone" class="hidden-xs">
               <a href="tel:7782050841">
@@ -61,20 +61,32 @@
 
   <div id="call-btn" class="visible-xs">
     <a class="btn" href="tel:7782050841">
-    <span class="glyphicon glyphicon-earphone"></span>
-    7782050841
-    </a>
+    <span class="glyphicon glyphicon-earphone"></span>7782050841</a>
   </div>
   <div id="xs-contact" class="text-center visible-xs">* Contact us</div>
 
   <div id="main-content" class="container">
     <div class="jumbotron">
-      <img src="images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-responsive visible-xs">
+      <img src="images/jumbotron_768.jpg" alt="Background" class="img-responsive visible-xs">
     </div>
-    
+
+    <div id="home-tiles" class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="project.html"><div id="project-tile"><span>projects</span></div></a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="certificate.html"><div id="certificate-tile"><span>certificates</span></div></a>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <a href="https://maps.app.goo.gl/98Te6ReQVzzvcXoz7" target="_blank">
+          <div id="map-tile">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.5373059610606!2d81.02197085281762!3d26.791015122390803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be482e48daf91%3A0x31d22e661ea3ff42!2sHCL%20IT%20City%2CLucknow!5e0!3m2!1sen!2sin!4v1706306476910!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <span>map</span>
+          </div>
+        </a>
+      </div>
+
   </div>
-
-
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
