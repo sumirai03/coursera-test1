@@ -120,6 +120,36 @@ body {
   opacity: .8;
 }
 /* END HOME PAGE */
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#social-sites, #partners{
+  line-height: 2;
+}
+#partners > span {
+  font-size: 1.3em;
+}
+#quotes {
+  font-style: italic;
+}
+#quotes p:nth-child(2){
+  margin-top: 25px;
+}
+#social-sites span{
+  margin-left: 5px;
+}
+#social-sites a:visited {
+  text-decoration: none;
+}
+/* END FOOTER */
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .container .jumbotron {
@@ -220,7 +250,18 @@ body {
     width: 360px;
     margin: 0 auto 15px;
   }
-
+/* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
 }
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
