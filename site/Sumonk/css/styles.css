@@ -86,7 +86,7 @@ body {
   border: 2px solid #0c0905;
 }
 
-#project-tile, #certificate-tile, #map-tile {
+#cert-tile, #project-tile, #map-tile {
   height: 250px;
   width: 100%;
   margin-bottom: 15px;
@@ -94,20 +94,20 @@ body {
   border: 2px solid #3F0C1F;
   overflow: hidden;
 }
-#project-tile:hover, #certificate-tile:hover, #map-tile:hover {
+#cert-tile:hover, #project-tile:hover, #map-tile:hover {
   box-shadow: 0 1px 5px 1px #080a28;
 }
 
-#project-tile{
+#cert-tile{
+  background: url('../images/cert-tile.jpg') no-repeat;
+  background-position: center;
+}
+#project-tile {
   background: url('../images/project-tile.jpg') no-repeat;
   background-position: center;
 }
-#certificate-tile {
-  background: url('../images/certificate-tile.jpg') no-repeat;
-  background-position: center;
-}
 
-#project-tile span, #certificate-tile span, #map-tile span {
+#cert-tile span, #project-tile span, #map-tile span {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -120,6 +120,88 @@ body {
   opacity: .8;
 }
 /* END HOME PAGE */
+/*  CERT PAGE */
+.details-tile { 
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+.details-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.details-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#cert-title + div {
+  margin-bottom: 50px;
+}
+/* END CERT PAGE */
+/* PROJECT PAGE */
+#project-title,#project-title + div{
+  color:#333;
+}
+.project-tile {
+  margin-bottom: 25px;
+}
+.proect-tile hr {
+  width: 80%;
+}
+.project-tile .project-cost {
+  font-size: 1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+  color:#333;
+}
+.project-tile .project-price span {
+  font-size: .6em;
+}
+.project-photo {
+  position: relative;
+  border: 2px solid #3F0C1F; 
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+.project-photo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  font-size: 0.8em;
+  background-color: #557c3e;
+  text-align: center;
+}
+.project-description {
+  padding-right: 30px;
+
+}
+h3.project-details-title {
+  color:#333;
+  margin: 0 0 10px;
+}
+.project-details {
+  color:#333;
+  font-size: .9em;
+  font-style: italic;
+}
+/* END SINGLE CATEGORY PAGE */
 /* FOOTER */
 .panel-footer {
   margin-top: 30px;
@@ -173,14 +255,6 @@ body {
     background: url('../images/jumbotron_992.jpg') no-repeat;
     height: 558px;
   }
-  #menu-tile, #specials-tile, #map-tile {
-  height: 250px;
-  width: 100%;
-  margin-bottom: 15px;
-  position: relative;
-  border: 2px solid #3F0C1F;
-  overflow: hidden;
-}
   /* End Home Page */
 }
 /********** Small devices only **********/
@@ -191,11 +265,8 @@ body {
     background: url('../images/jumbotron_768.jpg') no-repeat;
     height: 432px;
   }
-
   /* End Home Page */
-
 }
-
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   /* Header */
@@ -246,9 +317,18 @@ body {
     padding: 0;
   }
 
-  #project-tile, #certficate-tile {
+  #cert-tile, #project-tile {
     width: 360px;
     margin: 0 auto 15px;
+  }
+  .project-photo {
+    margin-right: auto;
+  }
+  .project-tile .project-cost {
+    text-align: center;
+  }
+  .project-description {
+    text-align: center;;
   }
 /* Footer */
   .panel-footer section {
@@ -274,8 +354,16 @@ body {
   /* End Header */
   
   /* Home page */
-  #project-tile, #certificate-tile {
+  #cert-tile, #project-tile {
     width: 280px;
     margin: 0 auto 15px;
+  }
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
   }
 }
